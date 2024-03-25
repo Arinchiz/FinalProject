@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee shop</title>
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">
+    <img src="./images/logo1.png" alt="logo">
+  </a>
+
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#food">Food</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#blogs">Blogs</a>
+  </nav>
+
+  <div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+  </div>
+
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="Search here...">
+    <label for="search-box" class="fas fa-search"></label>
+  </div>
+
+  <div class="cart-items-container">
+   <a href ="#" class="btn">Buy now</a>
+  </div>
+  
+
+ </div>
+
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+      <h3>Fresh coffee all day</h3>
+      <p>Whether you're searching for something new to warm your mug, seeking the best brew method for your favorite blend or exploring our rarest offerings, you’ve come to the right place. Exceptional coffees from around the world. Sourced for the season, roasted at Starbucks Reserve® Roasteries and crafted with care.</p>
+      <a href ="#" class="btn">Get yours now</a>
+    </div>
+    <div class="blockSlider" id="blockSlider">
+      <div class="FullArea">
+          <div class="imagesArea">
+              <img class="imageSlider" src="images/add1.png" alt="">
+              <img class="imageSlider" src="images/add2.png" alt="">
+              <img class="imageSlider" src="images/add3.png" alt="">
+              <img class="imageSlider" src="images/add4.png" alt="">
+          </div>
+    
+          <div class="pointsAreaSize">
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+          </div>
+    
+          <div class="btnsAreaSize">
+              <div class="blockArrow" id="leftBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+              <div class="blockArrow" id="rightBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+          </div>
+      </div>
+    
+    </div>
+
+</section>
+
+<section class="about" id="about">
+  <h1 class="heading"> <span>about</span> us</h1>
+  <div class="row">
+    <div class="image">
+      <img src="./images/about.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Our Heritage</h3>
+      <p>Our story begins in 1971 along the cobblestone streets of Seattle’s historic Pike Place Market. It was here where Starbucks opened its first store, offering fresh-roasted coffee beans, tea and spices from around the world for our customers to take home. Our name was inspired by the classic tale, “Moby-Dick,” evoking the seafaring tradition of the early coffee traders.Starbucks would soon expand to Chicago and Vancouver, Canada and then on to California, Washington, D.C. and New York. By 1996, we would cross the Pacific to open our first store in Japan, followed by Europe in 1998 and China in 1999. 
+      </p>
+      <p>It takes many hands to craft the perfect cup of coffee – from the farmers who tend to the red-ripe coffee cherries, to the master roasters who coax the best from every bean, and to the barista who serves it with care. We are committed to the highest standards of quality and service, embracing our heritage while innovating to create new experiences to savor.</p>
+    <a href="#" class="btn">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="drinks">
+<h1 class="heading"> Our <span> drinks</span></h1>
+<div class="box-container">
+
+<div class="box">
+  <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+  </div>
+  <div class="image">
+    <img src="./images/menu1.jpg" alt="">
+  </div>
+  <div class="content">
+    <h3>Vanilla Sweet Cream Cold Brew</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="price">$3.99<span>$5.99</span></div>
+  </div>
+  <div class="hidden-info">
+    <span class="composition">We blend mocha sauce and Frappuccino® chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.</span>
+    <span class="calories">400 kcal</span>
+  </div>
+</div>
+
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/menu2.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Strawberry Açaí Lemonade</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$4.99<span>$5.99</span></div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">Sweet strawberry flavors, passion fruit and açaí notes balanced with the delightful zing of lemonade, served over ice with freeze-dried strawberry pieces. The ultimate pick-me-up your afternoon is calling for.</span>
+      <span class="calories">140 kcal</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/menu3.png" alt="">
+    </div>
+    <div class="content">
+      <h3> Iced Passion Tango Tea Lemonade</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$4.99<span>$5.99</span></div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">Our blend of hibiscus, lemongrass and apple hand-shaken with ice, lemonade and, of course, passion.</span>
+      <span class="calories">50 kcal</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/menu4.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Caramel Frappuccino Blended Beverage</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$3.99<span>$5.99</span></div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">Caramel syrup meets coffee, milk and ice for a rendezvous in the blender, while whipped cream and buttery caramel sauce layer the love on top. To change things up, try it affogato-style with a hot espresso shot poured right over the top.</span>
+      <span class="calories">380 kcal</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/menu5.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Luck of the Matcha Crème Frappuccino</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$6.99</div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">Inspired by a pot o’ gold at the end of the rainbow: sweet and creamy matcha, milk and ice are blended together and topped with whipped cream, caramel sauce and a crunchy caramel-sugar topping for a decadently delicious treat.</span>
+      <span class="calories">420 kcal</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/menu6.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Iced Lavender Cream Oatmilk Matcha</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$2.99<span>$3.99</span></div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">Smooth and creamy matcha served with oatmilk over ice, topped with sweet and subtle floral notes of lavender cream cold foam--an unexpected combination that’s springtime in a cup. Beverage includes dairy.</span>
+      <span class="calories">360 kcal</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/menu7.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Americano Soy Cold Brew</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$4.99<span>$5.99</span></div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">A creamy blend of spicy classic chai, milk and ice. Topped with sweetened whipped cream and a dash of cinnamon. Spice up your afternoon treat.</span>
+      <span class="calories">200 kcal</span>
+    </div>
+  </div>
+
+  <a href="#" class="box">
+    <div class="more" style="background-image: url('./images/allmenu.png');">
+      <button class="view-all-button">VIEW ALL</button>
+    </div>
+    </div>
+  </a>
+
+
+  <div class="modal">
+    <div class="modal-window">
+        <button class="btn-close"><i class="fas fa-times"></i></button>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img src="" alt="" id="modal-item-image">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-item-name"></h2>
+                <p id="modal-item-composition"></p>
+                <p id="modal-item-calories"></p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+</section>
+
+<section class="products" id="food">
+  <h1 class="heading"> Our <span> food</span></h1>
+  <div class="box-container">
+  
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+    </div>
+    <div class="image">
+      <img src="./images/food1.png" alt="">
+    </div>
+    <div class="content">
+      <h3>Chicken, Maple Butter & Egg Sandwich</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="price">$8.99<span>$10.99</span></div>
+    </div>
+    <div class="hidden-info">
+      <span class="composition">Breaded white-meat chicken, fluffy eggs and a maple-butter spread on a toasted oat-biscuit roll--a satisfyingly savory sandwich with a hint of sweetness.</span>
+      <span class="calories">450 calories, 6g sugar, 24g fat
+      </span>
+    </div>
+  </div>
+  
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+      </div>
+      <div class="image">
+        <img src="./images/food2.png" alt="">
+      </div>
+      <div class="content">
+        <h3>Bacon & Gruyère Egg Bites</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$6.99</div>
+      </div>
+      <div class="hidden-info">
+        <span class="composition">Applewood-smoked bacon and aged Gruyère Monterey Jack cheeses folded into cage-free eggs and cooked using the French "sous vide" technique to create a velvety texture that's full of flavor.</span>
+        <span class="calories">300 calories, 2g sugar, 20g fat
+
+        </span>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+      </div>
+      <div class="image">
+        <img src="./images/food3.png" alt="">
+      </div>
+      <div class="content">
+        <h3> Rolled & Steel-Cut Oatmeal</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$9.99<span>$10.99</span></div>
+      </div>
+      <div class="hidden-info">
+        <span class="composition">A blend of rolled and steel-cut whole-grain oats to customize any way you want with a selection of toppings: dried fruit, nut medley, brown sugar, agave or blueberries..</span>
+        <span class="calories">160 calories, 0g sugar, 2.5g fat
+        </span>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+      </div>
+      <div class="image">
+        <img src="./images/food4.png" alt="">
+      </div>
+      <div class="content">
+        <h3>Blueberry Muffin with jam</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$3.99<span>$4.59</span></div>
+      </div>
+      <div class="hidden-info">
+        <span class="composition">Soft muffin with sweet, juicy blueberries and a hint of lemon, finished with a crunchy sugar topping.</span>
+        <span class="calories">330 calories, 29g sugar, 14g fat
+        </span>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+      </div>
+      <div class="image">
+        <img src="./images/food5.png" alt="">
+      </div>
+      <div class="content">
+        <h3>Vanilla Bean Custard Danish</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$4.99</div>
+      </div>
+      <div class="hidden-info">
+        <span class="composition">Sugar-layered croissant dough filled with a rich and velvety vanilla bean custard--each piece handcrafted with a signature look and baked to a golden finish.</span>
+        <span class="calories">230 calories, 12g sugar, 9g fat
+        </span>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+      </div>
+      <div class="image">
+        <img src="./images/food6.png" alt="">
+      </div>
+      <div class="content">
+        <h3>Crispy Grilled Cheese on Sourdough</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$12.99<span>$14.99</span></div>
+      </div>
+      <div class="hidden-info">
+        <span class="composition">A blend of white Cheddar and mozzarella cheeses on sourdough bread, topped with a Parmesan butter spread.</span>
+        <span class="calories">520 calories, 1g sugar, 27g fat
+        </span>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye" onclick="showProductInfo(event, '', '')"></a>
+      </div>
+      <div class="image">
+        <img src="./images/food7.png" alt="">
+      </div>
+      <div class="content">
+        <h3>Eggs & Cheddar Protein Box</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$8.99<span>$10.99</span></div>
+      </div>
+      <div class="hidden-info">
+        <span class="composition">Two cage-free hard-boiled eggs, sliced tart apples, grapes and white Cheddar cheese come together with multigrain muesli bread and honey peanut butter.</span>
+        <span class="calories">460 calories, 21g sugar, 24g fat
+        </span>
+      </div>
+    </div>
+  
+    <a href="#" class="box">
+      <div class="more" style="background-image: url('./images/allmenu2.png');">
+        <button class="view-all-button">VIEW ALL</button>
+      </div>
+      </div>
+    </a>
+  
+  
+    <div class="modal">
+      <div class="modal-window">
+          <button class="btn-close"><i class="fas fa-times"></i></button>
+          <div class="modal-content">
+              <div class="modal-image">
+                  <img src="" alt="" id="modal-item-image">
+              </div>
+              <div class="modal-info">
+                  <h2 id="modal-item-name"></h2>
+                  <p id="modal-item-composition"></p>
+                  <p id="modal-item-calories"></p>
+              </div>
+          </div>
+      </div>
+      <div class="overlay"></div>
+  </div>
+  
+</section>
+
+<section class="contact" id="contacts">
+  <h1 class="heading"><span>Contact</span> us</h1>
+  <div class="row">
+    <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25223.554809990135!2d-122.40562847931359!3d37.791343900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f126f966f%3A0xc8bd703a10a5ef8f!2sStarbucks!5e0!3m2!1sru!2suk!4v1711153457269!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form action="">
+      <h3>Get in touch</h3>
+
+      <div class="inputBox">
+        <span class="fas fa-user"></span>
+        <input type="text"  id="name" placeholder="Name">
+        <div class="error-message" id="name-error"></div>
+      </div>
+
+      <div class="inputBox">
+        <span class="fas fa-envelope"></span>
+        <input type="email" id="email" placeholder="Email">
+        <div class="error-message" id="email-error"></div>
+      </div>
+      
+      <div class="inputBox">
+        <span class="fas fa-phone"></span>
+        <input type="tel" id="phoneNumber" placeholder="Number">
+        <div class="error-message" id="phone-error"></div>
+      </div>
+
+      <input type="submit" value="Subscribe now" class="btn">
+
+    </form>
+  </div>
+</section>
+
+<section class="blogs" id="blogs">
+  <h1 class="heading">Our <span>blogs</span></h1>
+  <div class="box-container">
+    <a href="#" class="box">
+      <div class="image">
+        <img src="./images/blog1.png" alt="">
+      </div>
+      <div class="content">
+        <p class="title">A Mother's Day must-have</p>
+        <span>29st february, 2024</span>
+        <p>Tell her what she means to you with a Starbucks gift card. Get yours in-store or send a Starbucks eGift online.</p>
+      </div>
+    </a>
+
+    <a href="#" class="box">
+      <div class="image">
+        <img src="./images/blog2.png" alt="">
+      </div>
+      <div class="content">
+        <p class="title">Mobile Order Sips for grocery trips</p>
+        <span>08st march, 2024</span>
+        <p>Mobile order at Starbucks cafés in even more grocery stores! Grab your favorite drinks and treats, then sip while you shop.</p>
+      </div>
+    </a>
+
+    <a href="#" class="box">
+      <div class="image">
+        <img src="./images/blog3.png" alt="">
+      </div>
+      <div class="content">
+        <p class="title">ENJOY BUY 1 FREE 1 only one day</p>
+        <span>13st february, 2024</span>
+        <p>Starbucks Happy Valentine's Day Buy 1 FREE 1 Promotion on 14 February 2024</p>
+      </div>
+    </a>
+
+    <a href="#" class="box">
+      <div class="image">
+        <img src="./images/blog4.png" alt="">
+      </div>
+      <div class="content">
+        <p class="title">Tasty and refreshing coffee</p>
+        <span>14st february, 2024</span>
+        <p>Sweeten their Valentine’s Day with a heartfelt gift card. Only at Starbucks.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="share">
+    <a href="https://www.facebook.com/Starbucks/?locale=en_GB" class="fab fa-facebook-f"></a>
+    <a href="https://twitter.com/Starbucks" class="fab fa-twitter"></a>
+    <a href="https://www.instagram.com/starbucks/" class="fab fa-instagram"></a>
+    <a href="https://ru.pinterest.com/starbucks/" class="fab fa-pinterest"></a>
+  </div>
+
+  <div class="credit">Starbucks coffee | all rights reserved</div>
+</section>
+
+<script src="script/script.js"></script>
+</body>
+</html>
