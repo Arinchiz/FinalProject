@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Order</title>
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/order.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="./images/logo1.png" alt="logo">
+        </a>
+      
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="catalog2.html">Drinks</a>
+          <a href="catalog2.html">Food</a>
+          <a href="index.html">Contacts</a>
+          <a href="index.html">Blogs</a>
+        </nav>
+      
+        <div class="icons">
+          <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+      
+    </header>
+
+<div class="item-flex">
+    <section class="checkout">
+
+        
+        <h2 class="section-heading">Payment details</h2>
+        <div class="payment-form">
+
+            <div class="method">
+                <i class='bx bxs-credit-card cred-card'></i>
+                <span>Credit Card</span>
+            </div>
+            <form action="#">
+
+                <div class="cardholder-name">
+                    <label for="cardholder-name" class="label-default">Cardholder name</label>
+                    <input type="text" name="cardholder-name" id="cardholder-name" class="input-default error-input">
+                </div>
+                
+                <div class="card-number">
+                    <label for="card-number" class="label-default">Card number</label>
+                    <input type="number" name="card-number" id="card-number" class="input-default error-input">
+                    <div class="error-message" id="error-message-card-number"></div>
+                </div>
+                
+                <div class="expire-date">
+                    <label for="expire-day" class="label-default">Expiration date</label>
+                    <div class="input-flex">
+                        <input type="number" name="day" id="expire-day" placeholder="31" >
+                        /
+                        <input type="number" name="month" id="expire-month" placeholder="12" >
+                    </div>
+                    <div class="cvv">
+                        <label for="cvv" class="label-default">CVV</label>
+                        <input type="number" name="cvv" id="cvv" placeholder="123" >
+                    </div>
+                </div>
+                </div>
+            </form>
+        <button class="btn btn-primary">
+            <b>Pay</b><span id="payAmount"></span>
+        </button>
+    </section>
+    
+</div>
+
+<section class="footer">
+  <div class="share">
+    <a href="https://www.facebook.com/Starbucks/?locale=en_GB" class="fab fa-facebook-f"></a>
+    <a href="https://twitter.com/Starbucks" class="fab fa-twitter"></a>
+    <a href="https://www.instagram.com/starbucks/" class="fab fa-instagram"></a>
+    <a href="https://ru.pinterest.com/starbucks/" class="fab fa-pinterest"></a>
+  </div>
+
+  <div class="credit">Starbucks coffee | all rights reserved</div>
+</section>
+<div id="error-message" class="error-message"></div>
+<script src="script/order.js"></script>
+
+</body>
+</html>
